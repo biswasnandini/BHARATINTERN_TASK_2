@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#956ABA"
+    android:padding="24dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/total_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Questions"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#EEE0F1"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This will be the question"
+        android:layout_marginTop="150dp"
+        android:textColor="#F7F5F8"
+        android:textSize="24dp"
+        android:layout_above="@+id/choices_layout"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/choices_layout"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/Answer_A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FBFBFB"
+            android:text="Answer A"
+            android:textColor="@color/black"
+            android:textSize="24sp"/>
+        <Button
+            android:id="@+id/Answer_B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FBFBFB"
+            android:text="Answer B"
+            android:textColor="@color/black"
+            android:textSize="24sp"/>
+        <Button
+            android:id="@+id/Answer_C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FBFBFB"
+            android:text="Answer C"
+            android:textColor="@color/black"
+            android:textSize="24sp"/>
+        <Button
+            android:id="@+id/Answer_D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FBFBFB"
+            android:text="Answer D"
+            android:textColor="@color/black"
+            android:textSize="24sp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#BCC93E"
+        android:text="Submit"
+        android:layout_below="@+id/choices_layout"
+        android:textColor="@color/black"
+        android:textSize="24sp"/>
+
+</RelativeLayout>
